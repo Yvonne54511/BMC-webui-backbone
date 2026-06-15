@@ -1,4 +1,4 @@
-var PowerView =BackBone.View.extend({
+var PowerView = Backbone.View.extend({
 	className:'power-consumption-page',
 
 	template:_.template(`

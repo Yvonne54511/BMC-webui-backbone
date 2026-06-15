@@ -1,8 +1,5 @@
-
-brouter
-
 $(document).ready(function(){
-	var livePowerModel = new PowerTelementry();
+	var livePowerModel = new PowerTelemetry();
 
 	var mainDashboardView = new PowerView({model: livePowerModel});
 
