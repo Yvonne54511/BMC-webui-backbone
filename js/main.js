@@ -1,7 +1,15 @@
 $(document).ready(function(){
-	var livePowerModel = new PowerTelemetry();
+    // Initialize the router
+    var appRouter = new AppRouter();
 
-	var mainDashboardView = new PowerView({model: livePowerModel});
+    // Start Backbone history a necessary step for routing
+    Backbone.history.start();
 
-	$('#content-payload').html(mainDashboardView.render().el);
+    // Sidebar click handler
+    $('.nav-links li').on('click', function() {
+        var route = $(this).attr('data-navigate');
+        if (route) {
+            appRouter.navigate(route, {trigger: true});
+        }
+    });
 });

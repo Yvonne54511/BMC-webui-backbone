@@ -11,14 +11,14 @@
 		<aside id="sidebar-region">
 			<div class="logo">Giga BMC</div>
 			<ul class="nav-links">
-				<li>OverView</li>
-				<li>Dashboards</li>
-				<li>Logs</li>
-				<li>Hardware Status</li>
-				<li>Operations</li>
-				<li>Settings</li>
-				<li>Security and access</li>
-				<li>Resource management</li>
+				<li data-navigate="overview">OverView</li>
+				<li data-navigate="dashboards">Dashboards</li>
+				<li data-navigate="logs">Logs</li>
+				<li data-navigate="hardware">Hardware Status</li>
+				<li data-navigate="operations">Operations</li>
+				<li data-navigate="settings">Settings</li>
+				<li data-navigate="security">Security and access</li>
+				<li data-navigate="power">Resource management</li>
 			</ul>
 		</aside>
 
@@ -34,6 +34,7 @@
     
     <script src="js/models/PowerModel.js"></script>
     <script src="js/views/PowerView.js"></script>
+    <script src="js/router.js"></script>
     <script src="js/main.js"></script>
 
 
