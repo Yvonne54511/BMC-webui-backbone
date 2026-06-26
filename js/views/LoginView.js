@@ -1,7 +1,7 @@
 var LoginView = Backbone.View.extend({
     
     //event delegation
-    event:{
+    events:{
         //condition that triggers : function triggered
         "submit #login-form":"handleLogin"
     },
@@ -29,7 +29,7 @@ var LoginView = Backbone.View.extend({
        var password=this.$("#password").val(); 
 
         // "this model refers to?" model binding??  
-       $this.model.set({
+       this.model.set({
             username:this.$('#username').val(),
             password:this.$('#password').val()
        })

@@ -6,14 +6,7 @@ var AppRouter = Backbone.Router.extend({
         "*actions": "defaultRoute"//*:any uri that are not matched will be redirected to defaultRoute
     },
  
-    // below are the callback functions(Actions) for the routes defined above
-    // showLogin: function(){
-    //     var liveLoginModel = new LoginAuth(); //setup the model to fetch the data from the server
-    //     var view = new LoginView({model: liveLoginModel}); //setup the view to render the data
-    //     $('#content-payload').html(view.render().el);//looks for the div with id content-payload in index.htmland renders the view inside it
-    //     this.updateSidebar('login');
-    // },
-
+    // below are the callback functions(Actions) for the routes defined abovess
     showLogin:function(){
         var loginModel = new LoginModel();
         var loginView = new LoginView({model:loginModel});//the constructor of view is designed to  accept model input
